@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,400;1,100;1,700&family=Rubik:wght@400;500;600&family=Yellowtail&display=swap');
+
+:root {
+    --dark1: #21201E;
+    --dark2: #282525;
+    --brand: #FEA609;
+    --white: #ffffff;
+    --body: #D0C2C2;
+}
+
+body {
+    background: #21201E;
+    font-family: 'Rubik', sans-serif;
+    color: var(--body);
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-weight: 600;
+    color: var(--white);
+}
+
+.frame1 {
+    transition: all 0.4s ease;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.frame1:hover {
+    color: var(--brand);
+}
+
+img {
+    width: 100%;
+}
+
+section {
+    padding-top: 90px;
+    padding-bottom: 90px;
+}
+
+.red {
+    color: red;
+}
+
+/* Navbar */
+
+.navbar-toggler {
+    background-color: var(--brand);
+    border-color: var(--brand);
+}
+
+.navbar-toggler:hover {
+    background-color: transparent;
+    color: var(--brand);
+
+}
+
+.navbar-brand {
+    color: var(--white);
+    font-size: 35px;
+    font-weight: 500;
+} 
+
+.navbar-brand:hover {
+    color: var(--brand);
+}
+.bg-dark {
+    background-color: var(--dark2)!important;
+}
+.navbar-nav .nav-link.active, .navbar-nav .show>.nav-link {
+    color: var(--brand);
+}
+.navbar .nav-link {
+    font-size: 13px;
+    text-transform: uppercase;
+}
+
+/* About */
+#about {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+#about h1 {
+    font-weight: 600;
+}
+#about .person-is span {
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-size: 14px;
+    color: var(--white);
+    margin-right: 8px;
+    text-transform: uppercase;
+}
+
+#about img{
+    border-radius:1000px;
+    border: 7px solid var(--brand);
+}
+
+.person-img {
+    position: relative;
+    z-index: 2;
+}
+
+.ellipse-top {
+    background: linear-gradient(225.18deg, #403D35 18.56%, rgba(73, 69, 57, 0) 71.77%);
+    position: absolute;
+    width: 70%;
+    height: 70%;
+    right: 0;
+    border-radius: 1000px;
+    z-index: -1;
+    top: -13%;
+}
+
+.ellipse-bottom {
+    background: linear-gradient(22.4deg, #34312B 27.52%, #21201E 72.04%);
+    position: absolute;
+    width: 40%;
+    height: 40%;
+    left: 0;
+    border-radius: 1000px;
+    z-index: -1;
+    bottom: -5%;
+}
+
+.btn {
+    padding: 13px 17px;
+}
+
+.btn-brand {
+    background-color: var(--brand);
+    border-color: var(--brand);
+}
+
+.btn-brand:hover {
+    background-color: transparent;
+    color: var(--brand);
+}
+
+/*Intro*/
+
+.intro {
+    margin-bottom: 40px;
+}
+
+.intro P {
+    max-width: 500px;
+}
+
+.text-brand {
+    color: var(--brand);
+}
+
+/* Services */
+
+.service {
+    background-color: var(--dark2);
+    padding: 28px;
+    display: flex;
+    border-radius: 12px;
+}
+.iconbox {
+    width: 70px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: none;
+    background-color: var(--dark1);
+    margin-right: 18px;
+    border-radius: 8px;
+}
+
+.service img {
+    width: 46px;
+}
+
+.service h1 {
+    font-size: 30px;
+    font-weight: 500;
+}
+/*Divider*/
+
+.divider {
+    border: 1.5px solid rgb(87, 79, 79);
+    border-radius: 4px;
+}
+
+/*Portfolio*/
+
+.portfolio-item {
+    position: relative;
+}
+
+.portfolio-item .iconbox {
+    background-color: var(--brand);
+    border-radius: 1000px;
+    position: absolute;
+    top: 150px;
+    left: 40%;
+    opacity: 0;
+    transition: all 0.4s ease;
+}
+.portfolio-item:hover .iconbox {
+    opacity: 1;
+    top: 40%;
+}
+
+.portfolio-item .iconbox img {
+    height: 28px;
+}
+
+/*Review*/
+
+.review {
+    padding: 28px;
+    background-color: var(--dark2);
+    border-radius: 12px;
+}
+
+.review img {
+    width: 65px;
+    border-radius: 100px;
+    border: 2px solid var(--brand);
+}
+
+/*Contacts*/
+form .form-control {
+    background-color: transparent;
+    border-color: rgba(255,255,255,0.2);
+}
+
+form .form-control:focus {
+    box-shadow: none;
+    border-color: var(--brand);
+    background-color: rgba(255,255,255,0.2);
+    color: var(--white);
+}
+
+/*Footer*/
+footer {
+    background-color: var(--dark2);
+    color: var(--white);
+}
+
+footer a {
+    color: var(--white);
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: var(--brand);
+}
+/*Modal*/
+.modal h2 {
+    color: var(--dark1);
+    font-weight: 500;
+}
